@@ -1,0 +1,4 @@
+"Model","C_index"
+"Cox PH",0.590570719602978
+"LASSO-Cox",0.585669975186104
+"Random Survival Forest",0.531141439205955
