@@ -1,5 +1,5 @@
 library(ggplot2)
-data <- read.csv("data/GBSG2.csv")
+data <- read.csv("C:\\Users\\Dell\\Documents\\Survival Analysis\\data\\GBSG2.csv")
 
 # Convert categorical variables
 data$horTh <- factor(data$horTh)
@@ -10,11 +10,7 @@ data$tgrade <- factor(
 )
 
 # Create event indicator
-data$event <- ifelse(
-  data$cens == 0,
-  1,
-  0
-)
+data$event <- as.integer(data$cens == 1)
 
 # Basic summary
 summary(data)

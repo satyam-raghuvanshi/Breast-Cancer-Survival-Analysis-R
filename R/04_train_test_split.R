@@ -9,11 +9,7 @@ data$tgrade <- factor(
 )
 
 # Create event indicator
-data$event <- ifelse(
-  data$cens == 0,
-  1,
-  0
-)
+data$event <- as.integer(data$cens == 1)
 
 # Train-test split
 set.seed(123)
